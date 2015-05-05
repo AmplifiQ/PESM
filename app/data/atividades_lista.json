@@ -1,0 +1,370 @@
+[
+    {
+        "ID": 322,
+        "title": "Trilha de bicicleta",
+        "content": "<p>Rio Paraibuna e a Cachoeira grande, Rio Ipiranguinha com sucessão de quedas de águas límpidas, rastros de animais, observação de pássaros, floresta atlântica preservada, manchas de palmito, com alternativa para ir de carro até a metade do caminho. Pode-se acessar os primeiros 4Km de bicicletas devidamente equipado(Luvas e capacete), Vertedores para estudo de hidrologia.</p>\n",
+        "slug": "trilha-de-bicicleta",
+        "post_metas": {
+            "nucleo_id": "10",
+            "tipo_principal": "29",
+            "galeria": [
+                {
+                    "caption": "Atividade Galeria 1",
+                    "imagem": "img/uploads/atividade_galeria1.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 2",
+                    "imagem": "img/uploads/atividade_galeria2.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 3",
+                    "imagem": "img/uploads/atividade_galeria3.jpg"
+                }
+            ]
+        },
+        "featured_image": {
+            "guid": "img/uploads/atividade_destaque.jpg"
+        },
+        "terms": {
+            "tipo_atividades": [
+                {
+                    "ID": 29,
+                    "name": "Passeio noturno",
+                    "slug": "passeio-noturno"
+                },
+                {
+                    "ID": 25,
+                    "name": "Rapel",
+                    "slug": "rapel"
+                },
+                {
+                    "ID": 32,
+                    "name": "Trilha",
+                    "slug": "trilha"
+                }
+            ]
+        }
+    },
+    {
+        "ID": 209,
+        "title": "Aventura tudo em um",
+        "content": "<p>Exemplo de atividade com todos os tipos.</p>\n",
+        "slug": "aventura",
+        "post_metas": {
+            "nucleo_id": "197",
+            "tipo_principal": "13",
+            "galeria": [
+                {
+                    "caption": "Atividade Galeria 1",
+                    "imagem": "img/uploads/atividade_galeria1.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 2",
+                    "imagem": "img/uploads/atividade_galeria2.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 3",
+                    "imagem": "img/uploads/atividade_galeria3.jpg"
+                }
+            ]
+        },
+        "featured_image": {
+            "guid": "img/uploads/atividade_destaque.jpg"
+        },
+        "terms": {
+            "tipo_atividades": [
+                {
+                    "ID": 21,
+                    "name": "Arvorismo",
+                    "slug": "arvorismo"
+                },
+                {
+                    "ID": 24,
+                    "name": "Camping",
+                    "slug": "camping"
+                },
+                {
+                    "ID": 23,
+                    "name": "Canoagem",
+                    "slug": "canoagem"
+                },
+                {
+                    "ID": 28,
+                    "name": "Cartografia",
+                    "slug": "cartografia"
+                },
+                {
+                    "ID": 13,
+                    "name": "Ciclismo",
+                    "slug": "ciclismo"
+                },
+                {
+                    "ID": 4,
+                    "name": "Escalada",
+                    "slug": "escalada"
+                },
+                {
+                    "ID": 31,
+                    "name": "Fotografia",
+                    "slug": "fotografia"
+                },
+                {
+                    "ID": 30,
+                    "name": "Lago",
+                    "slug": "lago"
+                },
+                {
+                    "ID": 27,
+                    "name": "Montanhismo",
+                    "slug": "montanhismo"
+                },
+                {
+                    "ID": 22,
+                    "name": "Observação de pássaros",
+                    "slug": "observacao-de-passaros"
+                }
+            ]
+        }
+    },
+    {
+        "ID": 128,
+        "title": "Arvorismo no Pinheiro Velho",
+        "content": "<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>\n",
+        "slug": "arvorismo-no-pinheiro-velho",
+        "post_metas": {
+            "nucleo_id": "194",
+            "tipo_principal": "21",
+            "galeria": [
+                {
+                    "caption": "Atividade Galeria 1",
+                    "imagem": "img/uploads/atividade_galeria1.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 2",
+                    "imagem": "img/uploads/atividade_galeria2.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 3",
+                    "imagem": "img/uploads/atividade_galeria3.jpg"
+                }
+            ]
+        },
+        "featured_image": {
+            "guid": "img/uploads/atividade_destaque.jpg"
+        },
+        "terms": {
+            "tipo_atividades": [
+                {
+                    "ID": 21,
+                    "name": "Arvorismo",
+                    "slug": "arvorismo"
+                },
+                {
+                    "ID": 32,
+                    "name": "Trilha",
+                    "slug": "trilha"
+                }
+            ]
+        }
+    },
+    {
+        "ID": 109,
+        "title": "Trilha da redenção",
+        "content": "<p><strong>Lorem Ipsum</strong> é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>\n",
+        "slug": "trilha-da-redencao",
+        "post_metas": {
+            "nucleo_id": "191",
+            "tipo_principal": "13",
+            "galeria": [
+                {
+                    "caption": "Atividade Galeria 1",
+                    "imagem": "img/uploads/atividade_galeria1.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 2",
+                    "imagem": "img/uploads/atividade_galeria2.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 3",
+                    "imagem": "img/uploads/atividade_galeria3.jpg"
+                }
+            ]
+        },
+        "featured_image": {
+            "guid": "img/uploads/atividade_destaque.jpg"
+        },
+        "terms": {
+            "tipo_atividades": [
+                {
+                    "ID": 13,
+                    "name": "Ciclismo",
+                    "slug": "ciclismo"
+                }
+            ]
+        }
+    },
+    {
+        "ID": 80,
+        "title": "Canoagem",
+        "content": "<p><a href=\"http://amplifiq.com.br/clientes/pesm/wp-content/uploads/2014/12/atividade_icone_caiaque.svg\"><img class=\"alignnone size-medium wp-image-81\" src=\"http://amplifiq.com.br/clientes/pesm/wp-content/uploads/2014/12/atividade_icone_caiaque.svg\" alt=\"atividade_icone_caiaque\" width=\"1\" height=\"1\" /></a></p>\n",
+        "slug": "canoagem",
+        "post_metas": {
+            "nucleo_id": "187",
+            "tipo_principal": "23",
+            "galeria": [
+                {
+                    "caption": "Atividade Galeria 1",
+                    "imagem": "img/uploads/atividade_galeria1.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 2",
+                    "imagem": "img/uploads/atividade_galeria2.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 3",
+                    "imagem": "img/uploads/atividade_galeria3.jpg"
+                }
+            ]
+        },
+        "featured_image": {
+            "guid": "img/uploads/atividade_destaque.jpg"
+        },
+        "terms": {
+            "tipo_atividades": [
+                {
+                    "ID": 23,
+                    "name": "Canoagem",
+                    "slug": "canoagem"
+                }
+            ]
+        }
+    },
+    {
+        "ID": 52,
+        "title": "Banho no riacho",
+        "content": "",
+        "slug": "banho-no-riacho",
+        "post_metas": {
+            "nucleo_id": "184",
+            "tipo_principal": "24",
+            "galeria": [
+                {
+                    "caption": "Atividade Galeria 1",
+                    "imagem": "img/uploads/atividade_galeria1.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 2",
+                    "imagem": "img/uploads/atividade_galeria2.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 3",
+                    "imagem": "img/uploads/atividade_galeria3.jpg"
+                }
+            ]
+        },
+        "featured_image": {
+            "guid": "img/uploads/atividade_destaque.jpg"
+        },
+        "terms": {
+            "tipo_atividades": [
+                {
+                    "ID": 24,
+                    "name": "Camping",
+                    "slug": "camping"
+                },
+                {
+                    "ID": 23,
+                    "name": "Canoagem",
+                    "slug": "canoagem"
+                }
+            ]
+        }
+    },
+    {
+        "ID": 47,
+        "title": "Pedalada pela floresta",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>\n",
+        "slug": "pedalada-pela-floresta",
+        "post_metas": {
+            "nucleo_id": "181",
+            "tipo_principal": "13",
+            "galeria": [
+                {
+                    "caption": "Atividade Galeria 1",
+                    "imagem": "img/uploads/atividade_galeria1.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 2",
+                    "imagem": "img/uploads/atividade_galeria2.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 3",
+                    "imagem": "img/uploads/atividade_galeria3.jpg"
+                }
+            ]
+        },
+        "featured_image": {
+            "guid": "img/uploads/atividade_destaque.jpg"
+        },
+        "terms": {
+            "tipo_atividades": [
+                {
+                    "ID": 13,
+                    "name": "Ciclismo",
+                    "slug": "ciclismo"
+                }
+            ]
+        }
+    },
+    {
+        "ID": 9,
+        "title": "Escalada do Minimonte",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n",
+        "slug": "escalada-do-minimonte",
+        "post_metas": {
+            "nucleo_id": "178",
+            "tipo_principal": "4",
+            "galeria": [
+                {
+                    "caption": "Atividade Galeria 1",
+                    "imagem": "img/uploads/atividade_galeria1.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 2",
+                    "imagem": "img/uploads/atividade_galeria2.jpg"
+                },
+                {
+                    "caption": "Atividade Galeria 3",
+                    "imagem": "img/uploads/atividade_galeria3.jpg"
+                }
+            ]
+        },
+        "featured_image": {
+            "guid": "img/uploads/atividade_destaque.jpg"
+        },
+        "terms": {
+            "tipo_atividades": [
+                {
+                    "ID": 21,
+                    "name": "Arvorismo",
+                    "slug": "arvorismo"
+                },
+                {
+                    "ID": 24,
+                    "name": "Camping",
+                    "slug": "camping"
+                },
+                {
+                    "ID": 23,
+                    "name": "Canoagem",
+                    "slug": "canoagem"
+                },
+                {
+                    "ID": 4,
+                    "name": "Escalada",
+                    "slug": "escalada"
+                }
+            ]
+        }
+    }
+]
