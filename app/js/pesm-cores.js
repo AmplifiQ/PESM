@@ -1,4 +1,4 @@
-/* 20150410-1730 */
+/* 20150506-1732 */
 (function() {
     'use strict';
 
@@ -124,19 +124,20 @@
 
         // Sort on Distance
         coresSrvc.listCores.sort(function(a, b) {
-            return a["km"] - b["km"];
+            //return a["km"] - b["km"];
+            return a.km - b.km;
         });
 
-		// call fix for Windows Phone Bouncing after deviceready.
-		fixWpBounce();
-		
+        // call fix for Windows Phone Bouncing after deviceready.
+        fixWpBounce();
+
         // Display Holder
         $scope.coresList = coresSrvc.listCores;
 
         // Renderiza SVG inline
         $scope.$on('renderSvg', function() {
             imgToSvg();
-		});
+        });
     }])
 
     // Create Core MAP list
@@ -160,8 +161,8 @@
             imgToSvg();
         });
 
-		// call fix for Windows Phone Bouncing after deviceready.
-		fixWpBounce();
+        // call fix for Windows Phone Bouncing after deviceready.
+        fixWpBounce();
 
     }])
 
@@ -190,6 +191,9 @@
                 break;
             }
         }
+
+        // call fix for Windows Phone Bouncing after deviceready.
+        fixWpBounce();
 
     }])
 

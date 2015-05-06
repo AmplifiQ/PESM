@@ -1,4 +1,4 @@
-/* 20150504-1527 */
+/* 20150506-1732 */
 (function() {
     'use strict';
 
@@ -237,7 +237,7 @@
                 element.bind('click', function(e) {
                     var hasVibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
                     if (hasVibrate) {
-                        navigator.vibrate(50);
+                        navigator.vibrate(30);
                     }
                 });
             }

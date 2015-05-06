@@ -1,4 +1,4 @@
-/* 20150504-1721 */
+/* 20150506-1711 */
 /* fixes */
 html,body {
     height: 100%;
@@ -11,9 +11,9 @@ html {
 }
 
 body {
-	position: fixed;
-	top: 0;
-	left:0;
+    position: fixed;
+    top: 0;
+    left:0;
 
     width: 100%;
     overflow: hidden;
@@ -30,10 +30,10 @@ body {
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
-    -o-text-size-adjust: none;
+    text-size-adjust: none;
 
-	/*-ms-scroll-translation: vertical-to-horizontal;*/
-	-ms-content-zooming: none;
+    /*-ms-scroll-translation: vertical-to-horizontal;*/
+    -ms-content-zooming: none;
 }
 
 .stage_maxW1 {
@@ -66,10 +66,6 @@ body {
     background-color: #508096;
     background-color: rgba(29,91,143,.5);
     background-image: url('../img/icone_arraste.svg');
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     border-radius: 50%;
 }
 
@@ -77,7 +73,6 @@ body {
     opacity: 0;
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
-    -ms-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s;
 }
@@ -105,21 +100,21 @@ body {
     opacity: 0;
     -webkit-animation: css-carousel-fade 21s linear infinite;
     -moz-animation: css-carousel-fade 21s linear infinite;
-    -ms-animation: css-carousel-fade 21s linear infinite;
+    -o-animation: css-carousel-fade 21s linear infinite;
     animation: css-carousel-fade 21s linear infinite;
 }
 
 .css-carousel .css-img:nth-child(2) {
     -webkit-animation-delay: 7s;
     -moz-animation-delay: 7s;
-    -ms-animation-delay: 7s;
+    -o-animation-delay: 7s;
     animation-delay: 7s;
 }
 
 .css-carousel .css-img:nth-child(3) {
     -webkit-animation-delay: 14s;
     -moz-animation-delay: 14s;
-    -ms-animation-delay: 14s;
+    -o-animation-delay: 14s;
     animation-delay: 14s;
 }
 
@@ -317,6 +312,10 @@ body {
     height: 14px;
 }
 
+.barra_topo .titulo.estiloB {
+    width: auto;
+}
+
 .barra_topo .voltar,
 .barra_topo .limpar,
 .barra_topo .tipo {
@@ -397,7 +396,7 @@ body {
 .stage_miolo,
 .stage_miolo2 {
     background: #ffffff;
-	overflow-x: hidden;
+    overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -438,13 +437,13 @@ body {
 
 .nucleo_conteudo1 {
     padding: 0;
-	/*
-	-webkit-transform: translateZ(0);
+    /*
+    -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
-	*/
+    */
 }
 
 .nucleo_conteudo1 .box1 {
@@ -802,6 +801,7 @@ body {
     text-align: center;
     -webkit-animation: rotate 2s infinite linear;
     -moz-animation: rotate 2s infinite linear;
+    -o-animation: rotate 2s infinite linear;
     animation: rotate 2s infinite linear;
 }
 

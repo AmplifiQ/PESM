@@ -1,10 +1,8 @@
-/* 20150408-1839 */
+/* 20150506-1732 */
 (function() {
     'use strict';
 
     angular.module('activities', [])
-
-
 
     /* ---------------------------------------------------------------------------------------------------- */
     /*  SERVICES                                                                                            */
@@ -132,7 +130,7 @@
 
                 self.storeDisplayFullData[n].km = km;
             }
-        }
+        };
 
         // JSON Check
         if (infoSrvc.allCores.length === 0) {
@@ -149,8 +147,6 @@
         return self;
 
     }])
-
-
 
     /* ---------------------------------------------------------------------------------------------------- */
     /*  CONTROLLERS                                                                                         */
@@ -176,6 +172,9 @@
         // Renderiza SVG inline
         $scope.$on('renderSvg', function() {
             imgToSvg();
+
+            // call fix for Windows Phone Bouncing after deviceready.
+            fixWpBounce();
         });
     }])
 
@@ -203,7 +202,8 @@
 
         // Sort on Distance
         activitiesSrvc.storeDisplayData.sort(function(a, b) {
-            return a["km"] - b["km"]
+            //return a["km"] - b["km"];
+            return a.km - b.km;
         });
 
         // Display Holder
@@ -214,6 +214,9 @@
         // Renders SVG inline
         $scope.$on('renderSvg', function() {
             imgToSvg();
+
+            // call fix for Windows Phone Bouncing after deviceready.
+            fixWpBounce();
         });
     }])
 
@@ -231,6 +234,9 @@
         // Renders SVG inline
         $scope.$on('renderSvg', function() {
             imgToSvg();
+
+            // call fix for Windows Phone Bouncing after deviceready.
+            fixWpBounce();
         });
     }])
 
@@ -270,10 +276,11 @@
         // Renders SVG inline
         $scope.$on('renderSvg', function() {
             imgToSvg();
+
+            // call fix for Windows Phone Bouncing after deviceready.
+            fixWpBounce();
         });
     }])
-
-
 
     /* ---------------------------------------------------------------------------------------------------- */
     /*  DIRECTIVES                                                                                          */

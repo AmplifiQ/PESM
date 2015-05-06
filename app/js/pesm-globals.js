@@ -1,4 +1,5 @@
-/* 20150430-1623 */
+/* 20150506-1732 */
+
 // This is my preferred Cordova detection method, as it doesn't require updating.
 var isCordovaApp = !!window.cordova;
 var cordovaPlatform; // android, ios, windows (wp8, Win32NT)
@@ -127,15 +128,15 @@ function preloadImages() {
 function fixWpBounce() {
     'use strict';
 
-	console.log('called fix for WP bouncing, it will fire ONLY if cordovaPlatform === windows || Win32NT');
+    //console.log('called fix for WP bouncing, it will fire ONLY if cordovaPlatform === windows || Win32NT');
 
-	if (cordovaPlatform === 'windows' || cordovaPlatform === 'Win32NT') {
-		if (window.FixWPBouncing) {
-			var wrapper = $('.stage_miolo2, .stage_miolo4');
-			console.log('cordovaPlatform is ' + cordovaPlatform + ', applying FixWPBouncing');
-			FixWPBouncing.fix(wrapper);
-		}
-	}
+    if (cordovaPlatform === 'windows' || cordovaPlatform === 'Win32NT') {
+        if (window.FixWPBouncing) {
+            var wrapper = $('.stage_miolo2, .stage_miolo4');
+            console.log('cordovaPlatform is ' + cordovaPlatform + ', applying FixWPBouncing');
+            FixWPBouncing.fix(wrapper);
+        }
+    }
 }
 
 // Parallax
@@ -155,8 +156,8 @@ function mapScroll(elementClass) {
     }
 
     // Map scrolling and zooming
-    if (cordovaPlatform !== 'windows' || cordovaPlatform !== 'Win32NT') {
-        console.log('not windows, init iScroll');
+    //if (cordovaPlatform !== 'windows' || cordovaPlatform !== 'Win32NT') {
+        console.log('init iScroll');
         var mapScrolld = new IScroll(mapScroller, {
             bindToWrapper: true,
             bounce: false,
@@ -168,19 +169,19 @@ function mapScroll(elementClass) {
             scrollY: true,
             mouseWheel: true,
             zoom: true,
-            //zoomMax: 4,
-            //zoomMin: 1,
-            //zoomStart: 1,
+            zoomMax: 4,
+            zoomMin: 1,
+            zoomStart: 1,
             wheelAction: 'zoom'
         });
         mapScrolld.on('scrollStart', hideAlert);
         mapScrolld.on('beforeScrollStart', hideAlert);
-    } else {
-        console.log('is windows, no iScroll');
-        mapScroller.style.overflow = 'auto';
-        mapScroller.addEventListener('scroll', hideAlert);
-        mapScroller.addEventListener('touchmove', hideAlert);
-    }
+    // } else {
+    //     console.log('is windows, no iScroll');
+    //     mapScroller.style.overflow = 'auto';
+    //     mapScroller.addEventListener('scroll', hideAlert);
+    //     mapScroller.addEventListener('touchmove', hideAlert);
+    // }
 }
 
 // Slider Galerias

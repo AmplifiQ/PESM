@@ -1,21 +1,21 @@
 <div class="stage_full_wh">
     <div class="barra_topo">
         <div class="voltar"><a go-back="go-back" vibrate="vibrate">voltar</a></div>
-        <div class="titulo estiloB">{{selectedActivity.title}}</div>
+        <div class="titulo estiloB">{{::selectedActivity.title}}</div>
         <div class="limpar"></div>
     </div>
     <div class="stage_miolo2 atividades_descricao">
         <div class="stage_maxW1 padding_1">
             <div class="titulo">
-                <span><img ng-src="img/logo_nucleo_{{selectedActivity.core_slug}}.svg" width="90%" /></span>
+                <span><img ng-src="img/logo_nucleo_{{::selectedActivity.core_slug}}.svg" width="90%" /></span>
             </div>
             <div class="imagem_destaque">
                 <img src="img/spacer.gif" width="100%" height="10" class="borda1" />
-                <img ng-src="{{selectedActivity.image}}" width="100%" class="imagem" />
+                <img ng-src="{{::selectedActivity.image}}" width="100%" class="imagem" />
             </div>
             <div class="stage_conteudo1">
-                <div class="icone_tipo_principal"><span><img ng-src="img/atividade_icone_{{selectedActivity.activity_icon}}.svg" class="svg svgHover" width="45" height="45" /></span></div>
-                <span class="titulo1">{{selectedActivity.title}}</span>
+                <div class="icone_tipo_principal"><span><img ng-src="img/atividade_icone_{{::selectedActivity.activity_icon}}.svg" class="svg svgHover" width="45" height="45" /></span></div>
+                <span class="titulo1">{{::selectedActivity.title}}</span>
                 <div ng-bind-html="selectedActivity.content"></div>
 
                 <div ng-if="selectedActivity.gallery[0].imagem">
@@ -23,8 +23,8 @@
                     <br clear="left">
                     <div carousel="carousel" class="slider1 owl-carousel" data-pagination="true">
                         <div ng-repeat="gallery in selectedActivity.gallery">
-                            <img class="picture" src="img/spacer.gif" style="background-image:url('{{gallery.imagem}}');" width="100%" />
-                            <span class="caption">{{gallery.caption}}</span>
+                            <img class="picture" src="img/spacer.gif" style="background-image:url('{{::gallery.imagem}}');" width="100%" />
+                            <span class="caption">{{::gallery.caption}}</span>
                         </div>
                     </div>
                 </div>
@@ -35,10 +35,10 @@
                     <span class="titulo2">Esta atividade inclui</span>
                     <ul class="lista_icones_atividades2" id="lista_tipo_atividade">
                         <li ng-repeat="activity in selectedActivity.activities" on-finish-repeat="renderSvg">
-                            <span title="{{activity.name}}">
-                                <img ng-src="img/atividade_icone_{{activity.slug}}.svg" class="svg svgHover" width="40" height="40" />
+                            <span title="{{::activity.name}}">
+                                <img ng-src="img/atividade_icone_{{::activity.slug}}.svg" class="svg svgHover" width="40" height="40" />
                             </span>
-                            <strong>{{activity.name}}</strong>
+                            <strong>{{::activity.name}}</strong>
                         </li>
                     </ul>
                 </div>
