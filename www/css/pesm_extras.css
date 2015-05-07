@@ -593,6 +593,10 @@ body {
     width: 100%;
 }
 
+.nucleo-como-chegar .map-scroller .scroller {
+    position: relative;
+}
+
 .nucleo-como-chegar .map-scroller img {
     width: auto;
     height: auto;

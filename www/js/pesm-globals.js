@@ -153,33 +153,25 @@ function mapScroll(elementClass) {
         }
     }
 
-    // Map scrolling and zooming
-    //if (cordovaPlatform !== 'windows' || cordovaPlatform !== 'Win32NT') {
-        console.log('init iScroll');
-        var mapScrolld = new IScroll(mapScroller, {
-            bindToWrapper: true,
-            bounce: false,
-            click: true,
-            eventPassthrough: false,
-            freeScroll: false,
-            momentum: true,
-            scrollX: true,
-            scrollY: true,
-            mouseWheel: true,
-            zoom: true,
-            zoomMax: 4,
-            zoomMin: 1,
-            zoomStart: 1,
-            wheelAction: 'zoom'
-        });
-        mapScrolld.on('scrollStart', hideAlert);
-        mapScrolld.on('beforeScrollStart', hideAlert);
-    // } else {
-    //     console.log('is windows, no iScroll');
-    //     mapScroller.style.overflow = 'auto';
-    //     mapScroller.addEventListener('scroll', hideAlert);
-    //     mapScroller.addEventListener('touchmove', hideAlert);
-    // }
+    console.log('init iScroll');
+    var mapScrolld = new IScroll(mapScroller, {
+        bindToWrapper: true,
+        bounce: false,
+        click: true,
+        eventPassthrough: false,
+        freeScroll: false,
+        momentum: true,
+        scrollX: true,
+        scrollY: true,
+        mouseWheel: true,
+        zoom: true,
+        zoomMax: 4,
+        zoomMin: 1,
+        wheelAction: 'zoom'
+    });
+
+    mapScrolld.on('scrollStart', hideAlert);
+    mapScrolld.on('beforeScrollStart', hideAlert);
 }
 
 // Slider Galerias

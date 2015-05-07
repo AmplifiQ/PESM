@@ -192,7 +192,7 @@
         }
 
         // call fix for Windows Phone Bouncing after deviceready.
-        fixWpBounce();
+        //fixWpBounce();
 
     }])
 

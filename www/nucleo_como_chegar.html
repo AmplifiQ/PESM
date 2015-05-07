@@ -11,7 +11,9 @@
         <div ng-class="{'hide-tab':!panel.isSelected(1)}" class="stage_miolo5">
             <span id="alerta" class="alerta">arraste<br>para navegar</span>
             <div class="map-scroller" map-scroll="map-scroll">
-                <img ng-src="img/mapas/{{::coreSlug}}_{{::localMap}}.jpg" width="100%" height="100%" />
+                <div class="scroller">
+                    <img ng-src="img/mapas/{{::coreSlug}}_{{::localMap}}.jpg" width="100%" height="100%" />
+                </div>
             </div>
         </div>
     </div>
