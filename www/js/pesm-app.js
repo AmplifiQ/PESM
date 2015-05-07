@@ -87,14 +87,14 @@
             restrict: 'A',
             link: function($scope, element, attrs) {
 
-                // Interval to check for new info
+                // Interval to check for new GPS info and update the text field
                 var running = $interval(function() {
                     if (gpsSrvc.area !== undefined) {
                         $scope.getLocation.area = gpsSrvc.area;
-                        //$interval.cancel(running);
                     }
                 }, 5000);
 
+                // Clicking on the text field updates the GPS
                 element.on('click', function(e) {
                     $scope.getLocation.area = 'Procurando...';
                     gpsSrvc.updateGps();
@@ -236,7 +236,7 @@
                 element.bind('click', function(e) {
                     var hasVibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
                     if (hasVibrate) {
-                        navigator.vibrate(30);
+                        navigator.vibrate(25);
                     }
                 });
             }

@@ -123,12 +123,8 @@
 
         // Sort on Distance
         coresSrvc.listCores.sort(function(a, b) {
-            //return a["km"] - b["km"];
             return a.km - b.km;
         });
-
-        // call fix for Windows Phone Bouncing after deviceready.
-        fixWpBounce();
 
         // Display Holder
         $scope.coresList = coresSrvc.listCores;
@@ -137,6 +133,9 @@
         $scope.$on('renderSvg', function() {
             imgToSvg();
         });
+
+        // call fix for Windows Phone Bouncing after deviceready.
+        fixWpBounce();
     }])
 
     // Create Core MAP list
@@ -162,7 +161,6 @@
 
         // call fix for Windows Phone Bouncing after deviceready.
         fixWpBounce();
-
     }])
 
     // Create Core How to Get Here
@@ -192,8 +190,7 @@
         }
 
         // call fix for Windows Phone Bouncing after deviceready.
-        //fixWpBounce();
-
+        fixWpBounce();
     }])
 
     /* ---------------------------------------------------------------------------------------------------- */

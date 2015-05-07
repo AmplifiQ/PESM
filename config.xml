@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget
     id="br.com.amplifiq.pesm"
-    version="0.0.4"
+    version="0.0.5"
     xmlns="http://www.w3.org/ns/widgets"
     xmlns:cdv="http://cordova.apache.org/ns/1.0">
 
@@ -61,36 +61,23 @@
     </platform>
 
     <platform name="wp8">
-        <icon src="res/windows/icons/Square44x44Logo.scale-100.png" width="44" height="44" />
-        <icon src="res/windows/icons/Square44x44Logo.scale-140.png" width="62" height="62" />
-        <icon src="res/windows/icons/Square44x44Logo.scale-240.png" width="106" height="106" />
+        <!--
+        <icon src="res/windows/icons/Square44x44Logo-scale-100.png" width="44" height="44" />
+        <icon src="res/windows/icons/Square44x44Logo-scale-140.png" width="62" height="62" />
+        <icon src="res/windows/icons/Square44x44Logo-scale-240.png" width="106" height="106" />
 
-        <icon src="res/windows/icons/Square50x50StoreLogo.scale-100.png" width="50" height="50" />
-        <icon src="res/windows/icons/Square50x50StoreLogo.scale-140.png" width="70" height="70" />
-        <icon src="res/windows/icons/Square50x50StoreLogo.scale-240.png" width="120" height="120" />
+        <icon src="res/windows/icons/Square50x50StoreLogo-scale-100.png" width="50" height="50" />
+        <icon src="res/windows/icons/Square50x50StoreLogo-scale-140.png" width="70" height="70" />
+        <icon src="res/windows/icons/Square50x50StoreLogo-scale-240.png" width="120" height="120" />
+
+        <splash src="res/windows/splash/480x800SplashScreen-scale-100.jpg" width="480" height="800" />
+        <splash src="res/windows/splash/480x800SplashScreen-scale-140.jpg" width="672" height="1120" />
+        <splash src="res/windows/splash/480x800SplashScreen-scale-240.jpg" width="1152" height="1920" />
+        -->
 
         <icon src="res/windows/icons/ApplicationIcon.png" width="99" height="99" />
         <icon src="res/windows/icons/Background.png" width="159" height="159" />
 
-        <splash src="res/windows/splash/480x800SplashScreen.scale-100.png" width="480" height="800" />
-        <splash src="res/windows/splash/480x800SplashScreen.scale-140.png" width="672" height="1120" />
-        <splash src="res/windows/splash/480x800SplashScreen.scale-240.png" width="1152" height="1920" />
-
-        <splash src="res/windows/splash/SplashScreenImage.png" width="768" height="1280"/>
-    </platform>
-
-    <platform name="windows">
-        <icon src="res/windows/icons/Square44x44Logo.scale-240.png" width="106" height="106" />
-
-        <icon src="res/windows/icons/Square50x50StoreLogo.scale-100.png" width="50" height="50" />
-        <icon src="res/windows/icons/Square50x50StoreLogo.scale-140.png" width="70" height="70" />
-        <icon src="res/windows/icons/Square50x50StoreLogo.scale-240.png" width="120" height="120" />
-
-        <icon src="res/windows/icons/smalllogo.png" width="30" height="30" />
-        <icon src="res/windows/icons/storelogo.png" width="50" height="50" />
-        <icon src="res/windows/icons/logo.png" width="150" height="150" />
-
-        <splash src="res/windows/splash/480x800SplashScreen.scale-240.png" width="1152" height="1920" />
-        <splash src="res/windows/splash/splashscreen.png" width="620" height="300"/>
+        <splash src="res/windows/splash/SplashScreenImage.jpg" width="768" height="1280"/>
     </platform>
 </widget>

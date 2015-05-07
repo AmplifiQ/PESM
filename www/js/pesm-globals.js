@@ -42,11 +42,7 @@ function preloadImages() {
     var img,
         imgArr = [
             'AjaxLoader.gif',
-            'atividade_icone_arvores.svg',
             'atividade_icone_arvorismo.svg',
-            'atividade_icone_bicicleta.svg',
-            'atividade_icone_binoculo.svg',
-            'atividade_icone_caiaque.svg',
             'atividade_icone_camping.svg',
             'atividade_icone_canoagem.svg',
             'atividade_icone_cartografia.svg',
@@ -54,59 +50,36 @@ function preloadImages() {
             'atividade_icone_escalada.svg',
             'atividade_icone_fotografia.svg',
             'atividade_icone_lago.svg',
-            'atividade_icone_lago1.svg',
-            'atividade_icone_lanterna.svg',
-            'atividade_icone_mapa.svg',
-            'atividade_icone_montanha1.svg',
-            'atividade_icone_montanha2.svg',
             'atividade_icone_montanhismo.svg',
-            'atividade_icone_nado.svg',
             'atividade_icone_observacao-de-passaros.svg',
             'atividade_icone_passeio-noturno.svg',
-            'atividade_icone_picnic1.svg',
             'atividade_icone_praia.svg',
             'atividade_icone_rapel.svg',
             'atividade_icone_trilha.svg',
-            'bg_bt1.svg',
-            'bg_icone1.svg',
-            //'borda_1.svg',
-            //'borda_2.svg',
-            //'borda_3.svg',
-            //'borda_4.svg',
-            //'borda_5.svg',
             'grabbing.png',
             'home_slide1.jpg',
             'home_slide2.jpg',
             'home_slide3.jpg',
-            //'icone_arraste.svg',
-            'icone_botao_coisas.svg',
-            'icone_botao_nucleos.svg',
-            'icone_contato_browser.svg',
-            'icone_contato_email.svg',
-            'icone_contato_rota.svg',
-            'icone_contato_telefone.svg',
-            'icone_lupa.svg',
-            //'icone_seta1.svg',
-            'icone_voltar1.svg',
             'logo_bertioga.svg',
             'logo_caraguatatuba.svg',
             'logo_cunha.svg',
             'logo_curucutu.svg',
             'logo_itariru.svg',
             'logo_itutinga-piloes.svg',
-            'logo_itutinga.svg',
-            'logo_nucleo.svg',
+            'logo_padre-doria.svg',
+            'logo_picinguaba.svg',
+            'logo_santa-virginia.svg',
+            'logo_sao-sebastiao.svg',
+            'logo_nucleo_bertioga.svg',
+            'logo_nucleo_caraguatatuba.svg',
             'logo_nucleo_cunha.svg',
             'logo_nucleo_curucutu.svg',
-            'logo_padre-doria.svg',
-            'logo_padre.svg',
-            'logo_pesm.svg',
-            'logo_picinguaba.svg',
-            'logo_pinciguaba.svg',
-            'logo_santa-virginia.svg',
-            'logo_santa_virginia.svg',
-            'logo_sao-sebastiao.svg',
-            'logo_sao_sebastiao.svg',
+            'logo_nucleo_itariru.svg',
+            'logo_nucleo_itutinga-piloes.svg',
+            'logo_nucleo_padre-doria.svg',
+            'logo_nucleo_picinguaba.svg',
+            'logo_nucleo_santa-virginia.svg',
+            'logo_nucleo_sao-sebastiao.svg',
             'sobre_img1.jpg',
             'sobre_img2.jpg',
             'sobre_img3.jpg',
@@ -130,7 +103,7 @@ function fixWpBounce() {
 
     if (cordovaPlatform === 'WinCE' || cordovaPlatform === 'Win32NT') {
         if (window.FixWPBouncing) {
-            var wrapper = $('.stage_miolo2, .stage_miolo4');
+            var wrapper = $('.stage_miolo2, .stage_miolo4, .stage_miolo5');
             console.log('cordovaPlatform is ' + cordovaPlatform + ', applying FixWPBouncing');
             FixWPBouncing.fix(wrapper);
         }
@@ -156,10 +129,10 @@ function mapScroll(elementClass) {
     console.log('init iScroll');
     var mapScrolld = new IScroll(mapScroller, {
         bindToWrapper: true,
-        bounce: false,
+        bounce: true,
         click: true,
         eventPassthrough: false,
-        freeScroll: false,
+        freeScroll: true,
         momentum: true,
         scrollX: true,
         scrollY: true,
@@ -172,6 +145,7 @@ function mapScroll(elementClass) {
 
     mapScrolld.on('scrollStart', hideAlert);
     mapScrolld.on('beforeScrollStart', hideAlert);
+    mapScrolld.scrollTo(1,1);
 }
 
 // Slider Galerias
