@@ -45,3 +45,4 @@ Temporary Items
 # Custom files and/or folders
 *.sublime-workspace
 *.sublime-project
+res/_src/

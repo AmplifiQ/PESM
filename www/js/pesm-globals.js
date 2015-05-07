@@ -1,8 +1,10 @@
-/* 20150506-1732 */
+/* 20150506-2152 */
 
 // This is my preferred Cordova detection method, as it doesn't require updating.
 var isCordovaApp = !!window.cordova;
-var cordovaPlatform; // android, ios, windows (wp8, Win32NT)
+
+// Stores the current platform
+var cordovaPlatform; // This will be Android, iOS, Windows, WinCE, Win32NT, etc
 
 if (isCordovaApp) {
     console.log("Running in Cordova/PhoneGap");
@@ -18,7 +20,7 @@ function bootstrapAngular() {
 
     console.log("Bootstrapping AngularJS");
 
-    // Hide the Status Bar
+    // Set the platform, and hide the Status Bar
     if (isCordovaApp) {
         cordovaPlatform = device.platform;
 
@@ -124,13 +126,11 @@ function preloadImages() {
     }
 }
 
-// WP Bounce
+// Windows Phone Bounce "Fix"
 function fixWpBounce() {
     'use strict';
 
-    //console.log('called fix for WP bouncing, it will fire ONLY if cordovaPlatform === windows || Win32NT');
-
-    if (cordovaPlatform === 'windows' || cordovaPlatform === 'Win32NT') {
+    if (cordovaPlatform === 'WinCE' || cordovaPlatform === 'Win32NT') {
         if (window.FixWPBouncing) {
             var wrapper = $('.stage_miolo2, .stage_miolo4');
             console.log('cordovaPlatform is ' + cordovaPlatform + ', applying FixWPBouncing');
