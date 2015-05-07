@@ -3,8 +3,6 @@
 //this hook installs all your plug-ins
 // add your plug-ins to this list--either the identifier, the file system location or the URL
 var pluginlist = [
-    //"org.apache.cordova.device",
-    //"https://github.com/chrisekelley/AppPreferences/"
     "com.wordsbaking.cordova.fix-wp-bouncing",
     "cordova-plugin-console",
     "cordova-plugin-device",
@@ -22,7 +20,7 @@ var sys = require('sys');
 var exec = require('child_process').exec;
 
 function puts(error, stdout, stderr) {
-    sys.puts(stdout)
+    sys.puts(stdout);
 }
 
 pluginlist.forEach(function(plug) {

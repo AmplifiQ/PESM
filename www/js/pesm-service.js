@@ -1,4 +1,3 @@
-/* 20150506-1732 */
 (function() {
     'use strict';
 

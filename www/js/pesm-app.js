@@ -1,4 +1,3 @@
-/* 20150506-1732 */
 (function() {
     'use strict';
 
@@ -8,7 +7,7 @@
 
         $sceDelegateProvider.resourceUrlWhitelist(['self', '*']);
 
-        $compileProvider.imgSrcSanitizationWhitelist(/^\s*((https?|ftp|file|ms-appx|x-wmapp|x-wmapp0|blob|cdvfile):|data:image\/)/);
+        $compileProvider.imgSrcSanitizationWhitelist(/^\s*((https?|ftp|file|data|ms-appx|x-wmapp|x-wmapp0|blob|cdvfile):|data:image\/)/);
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|tel|file|ms-appx|x-wmapp|x-wmapp0|cdvfile|geo):/);
 
         $routeProvider
