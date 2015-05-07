@@ -1,6 +1,4 @@
-/* 20150506-2152 */
-
-// This is my preferred Cordova detection method, as it doesn't require updating.
+// This is the preferred Cordova detection method, as it doesn't require updating.
 var isCordovaApp = !!window.cordova;
 
 // Stores the current platform
@@ -71,16 +69,16 @@ function preloadImages() {
             'atividade_icone_trilha.svg',
             'bg_bt1.svg',
             'bg_icone1.svg',
-            'borda_1.svg',
-            'borda_2.svg',
-            'borda_3.svg',
-            'borda_4.svg',
-            'borda_5.svg',
+            //'borda_1.svg',
+            //'borda_2.svg',
+            //'borda_3.svg',
+            //'borda_4.svg',
+            //'borda_5.svg',
             'grabbing.png',
             'home_slide1.jpg',
             'home_slide2.jpg',
             'home_slide3.jpg',
-            'icone_arraste.svg',
+            //'icone_arraste.svg',
             'icone_botao_coisas.svg',
             'icone_botao_nucleos.svg',
             'icone_contato_browser.svg',
@@ -88,7 +86,7 @@ function preloadImages() {
             'icone_contato_rota.svg',
             'icone_contato_telefone.svg',
             'icone_lupa.svg',
-            'icone_seta1.svg',
+            //'icone_seta1.svg',
             'icone_voltar1.svg',
             'logo_bertioga.svg',
             'logo_caraguatatuba.svg',
