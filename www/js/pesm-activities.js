@@ -171,10 +171,11 @@
         // Renderiza SVG inline
         $scope.$on('renderSvg', function() {
             imgToSvg();
-
-            // call fix for Windows Phone Bouncing after deviceready.
-            fixWpBounce();
         });
+
+        // call fix for Windows Phone Bouncing after deviceready.
+        fixWpBounce();
+
     }])
 
     // Manager Selected Activities (Atividades_lista.htm e Atividades_lista_nucleo.htm)
@@ -201,7 +202,6 @@
 
         // Sort on Distance
         activitiesSrvc.storeDisplayData.sort(function(a, b) {
-            //return a["km"] - b["km"];
             return a.km - b.km;
         });
 
@@ -213,10 +213,10 @@
         // Renders SVG inline
         $scope.$on('renderSvg', function() {
             imgToSvg();
-
-            // call fix for Windows Phone Bouncing after deviceready.
-            fixWpBounce();
         });
+
+        // call fix for Windows Phone Bouncing after deviceready.
+        fixWpBounce();
     }])
 
     // Display Data By Core (Atividades_lista_nucleo.htm)
@@ -233,10 +233,10 @@
         // Renders SVG inline
         $scope.$on('renderSvg', function() {
             imgToSvg();
-
-            // call fix for Windows Phone Bouncing after deviceready.
-            fixWpBounce();
         });
+
+        // call fix for Windows Phone Bouncing after deviceready.
+        fixWpBounce();
     }])
 
     // Activity Description
@@ -275,10 +275,10 @@
         // Renders SVG inline
         $scope.$on('renderSvg', function() {
             imgToSvg();
-
-            // call fix for Windows Phone Bouncing after deviceready.
-            fixWpBounce();
         });
+
+        // call fix for Windows Phone Bouncing after deviceready.
+        fixWpBounce();
     }])
 
     /* ---------------------------------------------------------------------------------------------------- */
@@ -322,6 +322,7 @@
                     if (activitiesSrvc.selectedActivities.length === 0) {
                         e.preventDefault();
                         console.log('Faltou selecionar ao menos uma atividade');
+                        alert('Selecione pelo menos uma atividade');
                     }
                 });
             }

@@ -56,10 +56,27 @@ function preloadImages() {
             'atividade_icone_praia.svg',
             'atividade_icone_rapel.svg',
             'atividade_icone_trilha.svg',
+            'bg_bt1.svg',
+            'bg_icone1.svg',
+            'borda_1.svg',
+            'borda_2.svg',
+            'borda_3.svg',
+            'borda_4.svg',
+            'borda_5.svg',
             'grabbing.png',
             'home_slide1.jpg',
             'home_slide2.jpg',
             'home_slide3.jpg',
+            'icone_arraste.svg',
+            'icone_botao_coisas.svg',
+            'icone_botao_nucleos.svg',
+            'icone_contato_browser.svg',
+            'icone_contato_email.svg',
+            'icone_contato_rota.svg',
+            'icone_contato_telefone.svg',
+            'icone_lupa.svg',
+            'icone_seta1.svg',
+            'icone_voltar1.svg',
             'logo_bertioga.svg',
             'logo_caraguatatuba.svg',
             'logo_cunha.svg',
@@ -103,7 +120,7 @@ function fixWpBounce() {
 
     if (cordovaPlatform === 'WinCE' || cordovaPlatform === 'Win32NT') {
         if (window.FixWPBouncing) {
-            var wrapper = $('.stage_miolo2, .stage_miolo4, .stage_miolo5');
+            var wrapper = $('.stage_miolo, .stage_miolo2, .stage_miolo4, .stage_miolo5');
             console.log('cordovaPlatform is ' + cordovaPlatform + ', applying FixWPBouncing');
             FixWPBouncing.fix(wrapper);
         }

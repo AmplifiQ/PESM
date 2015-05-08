@@ -110,6 +110,9 @@
     // About Park Ctrl
     .controller('aboutParkCtrl', ['$scope', 'infoSrvc', function($scope, infoSrvc) {
         $scope.aboutPark = infoSrvc.aboutPark;
+
+        // call fix for Windows Phone Bouncing after deviceready.
+        fixWpBounce();
     }])
 
     /* ---------------------------------------------------------------------------------------------------- */
