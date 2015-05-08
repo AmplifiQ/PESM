@@ -114,8 +114,14 @@ function fixWpBounce() {
 function mapScroll(elementClass) {
     'use strict';
 
-    var sigScroller = $('#alerta');
-    var mapScroller = document.querySelector(elementClass);
+    var sigScroller = $('#alerta'),
+        mapScroller = document.querySelector(elementClass),
+        mapScrollerC = mapScroller.firstElementChild,
+        mapScrollerW = mapScrollerC.offsetWidth,
+        mapScrollerH = mapScrollerC.offsetHeight;
+
+    mapScrollerC.style.width = mapScrollerW+'px';
+    mapScrollerC.style.height = mapScrollerH+'px';
 
     function hideAlert() {
         if (sigScroller.length > 0) {
@@ -126,26 +132,28 @@ function mapScroll(elementClass) {
         }
     }
 
-    console.log('init iScroll');
-    var mapScrolld = new IScroll(mapScroller, {
-        bindToWrapper: true,
-        bounce: true,
-        click: true,
-        eventPassthrough: false,
-        freeScroll: true,
-        momentum: true,
-        scrollX: true,
-        scrollY: true,
-        mouseWheel: true,
-        zoom: true,
-        zoomMax: 4,
-        zoomMin: 1,
-        wheelAction: 'zoom'
-    });
+    setTimeout(function(){
+        console.log('init iScroll');
+        var mapScrolld = new IScroll(mapScroller, {
+            bindToWrapper: true,
+            bounce: true,
+            click: true,
+            eventPassthrough: false,
+            freeScroll: true,
+            momentum: true,
+            scrollX: true,
+            scrollY: true,
+            mouseWheel: true,
+            zoom: true,
+            zoomMax: 4,
+            zoomMin: 1,
+            wheelAction: 'zoom'
+        });
 
-    mapScrolld.on('scrollStart', hideAlert);
-    mapScrolld.on('beforeScrollStart', hideAlert);
-    mapScrolld.scrollTo(1,1);
+        mapScrolld.on('scrollStart', hideAlert);
+        mapScrolld.on('beforeScrollStart', hideAlert);
+        mapScrolld.scrollTo(-1,-1);
+    },1000);
 }
 
 // Slider Galerias
