@@ -114,25 +114,18 @@ function fixWpBounce() {
 function mapScroll(elementClass) {
     'use strict';
 
-    setTimeout(function(){
+    var sigScroller = $('#alerta'),
+        mapScroller = document.querySelector(elementClass),
+        mapScrollerC = mapScroller.firstElementChild;
 
-        var sigScroller = $('#alerta'),
-            mapScroller = document.querySelector(elementClass),
-            mapScrollerC = mapScroller.firstElementChild,
-            mapScrollerW = mapScrollerC.offsetWidth,
+    mapScrollerC.addEventListener('load', scrollIt);
+
+    function scrollIt() {
+        var mapScrollerW = mapScrollerC.offsetWidth,
             mapScrollerH = mapScrollerC.offsetHeight;
 
         mapScrollerC.style.width = mapScrollerW + 'px';
         mapScrollerC.style.height = mapScrollerH + 'px';
-
-        function hideAlert() {
-            if (sigScroller.length > 0) {
-                sigScroller.addClass("inativo");
-                sigScroller.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
-                    sigScroller.hide();
-                });
-            }
-        }
 
         console.log('init iScroll');
         var mapScrolld = new IScroll(mapScroller, {
@@ -153,8 +146,17 @@ function mapScroll(elementClass) {
 
         mapScrolld.on('scrollStart', hideAlert);
         mapScrolld.on('beforeScrollStart', hideAlert);
-        //mapScrolld.scrollTo(-1,-1);
-    }, 1000);
+        //mapScrolld.scrollTo(-0.1,-0.1);
+    }
+
+    function hideAlert() {
+        if (sigScroller.length > 0) {
+            sigScroller.addClass("inativo");
+            sigScroller.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+                sigScroller.hide();
+            });
+        }
+    }
 }
 
 // Slider Galerias
