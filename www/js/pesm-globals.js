@@ -118,7 +118,12 @@ function mapScroll(elementClass) {
         mapScroller = document.querySelector(elementClass),
         mapScrollerC = mapScroller.firstElementChild;
 
-    mapScrollerC.addEventListener('load', scrollIt);
+    // is it a simple IMG element or not?
+    if (mapScrollerC.nodeName.toLowerCase() === 'img') {
+        mapScrollerC.addEventListener('load', scrollIt);
+    } else {
+        scrollIt();
+    }
 
     function scrollIt() {
         var mapScrollerW = mapScrollerC.offsetWidth,
