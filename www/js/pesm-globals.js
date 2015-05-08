@@ -110,29 +110,30 @@ function fixWpBounce() {
     }
 }
 
-// Parallax
+// Map Scrolling (iScroll)
 function mapScroll(elementClass) {
     'use strict';
 
-    var sigScroller = $('#alerta'),
-        mapScroller = document.querySelector(elementClass),
-        mapScrollerC = mapScroller.firstElementChild,
-        mapScrollerW = mapScrollerC.offsetWidth,
-        mapScrollerH = mapScrollerC.offsetHeight;
-
-    mapScrollerC.style.width = mapScrollerW+'px';
-    mapScrollerC.style.height = mapScrollerH+'px';
-
-    function hideAlert() {
-        if (sigScroller.length > 0) {
-            sigScroller.addClass("inativo");
-            sigScroller.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
-                sigScroller.hide();
-            });
-        }
-    }
-
     setTimeout(function(){
+
+        var sigScroller = $('#alerta'),
+            mapScroller = document.querySelector(elementClass),
+            mapScrollerC = mapScroller.firstElementChild,
+            mapScrollerW = mapScrollerC.offsetWidth,
+            mapScrollerH = mapScrollerC.offsetHeight;
+
+        mapScrollerC.style.width = mapScrollerW + 'px';
+        mapScrollerC.style.height = mapScrollerH + 'px';
+
+        function hideAlert() {
+            if (sigScroller.length > 0) {
+                sigScroller.addClass("inativo");
+                sigScroller.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+                    sigScroller.hide();
+                });
+            }
+        }
+
         console.log('init iScroll');
         var mapScrolld = new IScroll(mapScroller, {
             bindToWrapper: true,
@@ -152,8 +153,8 @@ function mapScroll(elementClass) {
 
         mapScrolld.on('scrollStart', hideAlert);
         mapScrolld.on('beforeScrollStart', hideAlert);
-        mapScrolld.scrollTo(-1,-1);
-    },1000);
+        //mapScrolld.scrollTo(-1,-1);
+    }, 1000);
 }
 
 // Slider Galerias
