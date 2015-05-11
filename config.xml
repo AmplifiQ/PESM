@@ -41,13 +41,13 @@
     <platform name="android">
         <preference name="DisallowOverscroll" value="true" />
 
-        <icon src="res/android/icons/_icon_512.png" />
-        <icon src="res/android/icons/_icon_192.png" density="xxxhdpi" />
-        <icon src="res/android/icons/_icon_144.png" density="xxhdpi" />
-        <icon src="res/android/icons/_icon_96.png" density="xhdpi" />
-        <icon src="res/android/icons/_icon_72.png" density="hdpi" />
-        <icon src="res/android/icons/_icon_48.png" density="mdpi" />
-        <icon src="res/android/icons/_icon_36.png" density="ldpi" />
+        <icon src="res/android/icons/_icon_android_512.png" />
+        <icon src="res/android/icons/_icon_android_192.png" density="xxxhdpi" />
+        <icon src="res/android/icons/_icon_android_144.png" density="xxhdpi" />
+        <icon src="res/android/icons/_icon_android_96.png" density="xhdpi" />
+        <icon src="res/android/icons/_icon_android_72.png" density="hdpi" />
+        <icon src="res/android/icons/_icon_android_48.png" density="mdpi" />
+        <icon src="res/android/icons/_icon_android_36.png" density="ldpi" />
 
         <splash src="res/android/splash/_splash_1280x720.png" density="land-xhdpi"/>
         <splash src="res/android/splash/_splash_800x480.png" density="land-hdpi"/>
@@ -61,23 +61,9 @@
     </platform>
 
     <platform name="wp8">
-        <!--
-        <icon src="res/windows/icons/Square44x44Logo-scale-100.png" width="44" height="44" />
-        <icon src="res/windows/icons/Square44x44Logo-scale-140.png" width="62" height="62" />
-        <icon src="res/windows/icons/Square44x44Logo-scale-240.png" width="106" height="106" />
-
-        <icon src="res/windows/icons/Square50x50StoreLogo-scale-100.png" width="50" height="50" />
-        <icon src="res/windows/icons/Square50x50StoreLogo-scale-140.png" width="70" height="70" />
-        <icon src="res/windows/icons/Square50x50StoreLogo-scale-240.png" width="120" height="120" />
-
-        <splash src="res/windows/splash/480x800SplashScreen-scale-100.jpg" width="480" height="800" />
-        <splash src="res/windows/splash/480x800SplashScreen-scale-140.jpg" width="672" height="1120" />
-        <splash src="res/windows/splash/480x800SplashScreen-scale-240.jpg" width="1152" height="1920" />
-        -->
-
         <icon src="res/windows/icons/ApplicationIcon.png" width="99" height="99" />
         <icon src="res/windows/icons/Background.png" width="159" height="159" />
 
-        <splash src="res/windows/splash/SplashScreenImage.jpg" width="768" height="1280"/>
+        <splash src="res/windows/splash/SplashScreenImage.png" width="768" height="1280"/>
     </platform>
 </widget>
