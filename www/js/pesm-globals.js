@@ -122,6 +122,7 @@ function fixWpBounce() {
         if (window.FixWPBouncing) {
             var wrapper = $('.stage_miolo, .stage_miolo2, .stage_miolo4, .stage_miolo5');
             console.log('cordovaPlatform is ' + cordovaPlatform + ', applying FixWPBouncing');
+            //console.log(wrapper);
             FixWPBouncing.fix(wrapper);
         }
     }
