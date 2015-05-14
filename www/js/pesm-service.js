@@ -63,10 +63,7 @@
 
         // Pure HTML5 Geolocation
         function getHTML5Position() {
-            console.log('getHTML5Position');
-
             if (Modernizr.geolocation) {
-                console.log('Modernizr.geolocation');
                 navigator.geolocation.getCurrentPosition(onGpsSuccess, onGpsError, html5Options);
             } else {
                 self.area = 'GPS não encontrado';
@@ -74,9 +71,6 @@
         }
 
         function onGpsSuccess(position) {
-            console.log('onGpsSuccess');
-            console.log(position);
-
             var latitude = position.coords.latitude,
                 longitude = position.coords.longitude,
                 sLatStr = (''+latitude).substr(0,10),
@@ -90,9 +84,6 @@
         }
 
         function onGpsError(error) {
-            console.log('onGpsError');
-            console.log(error);
-
             self.latitude = null;
             self.longitude = null;
             self.city = 'Cidade não encontrada';
@@ -112,9 +103,6 @@
 
         //The callback function executed when the location is fetched successfully by geolocator().
         function onGeoSuccess(location) {
-            console.log('onGeoSuccess');
-            //console.log(location);
-
             self.latitude = location.coords.latitude;
             self.longitude = location.coords.longitude;
             self.city = location.address.city;
@@ -125,17 +113,12 @@
 
         //The callback function executed when the location could not be fetched by geolocator().
         function onGeoError(error) {
-            console.log('onGeoError');
-            console.log(error);
-
             self.latitude = null;
             self.longitude = null;
             self.city = 'Cidade não encontrada';
             self.region = 'Região não encontrada';
 
             if (geolocator.isPositionError(error)) {
-                console.log('isPositionError()');
-
                 if (error.code === 1) {
                     self.area = 'Uso de GPS negado'; //PERMISSION_DENIED (1)
                 }
@@ -157,15 +140,9 @@
         // Update GPS
         self.updateGps = function() {
             $timeout(function() {
-                console.log('updateGps');
                 geolocator.locate(onGeoSuccess, onGeoError, 0, html5Options); //0 = FreeGeoIP - https://github.com/onury/geolocator
             });
         };
-
-        // Start checking for GPS
-        //$interval(function() {
-            //self.updateGps();
-        //}, 60000);
 
     }]);
 

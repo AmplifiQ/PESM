@@ -5,10 +5,8 @@ var isCordovaApp = !!window.cordova;
 var cordovaPlatform; // This will be Android, iOS, Windows, WinCE, Win32NT, etc
 
 if (isCordovaApp) {
-    console.log("Running in Cordova/PhoneGap");
     document.addEventListener("deviceready", bootstrapAngular, false);
 } else {
-    console.log("Running in browser");
     bootstrapAngular();
 }
 
@@ -16,20 +14,15 @@ if (isCordovaApp) {
 function bootstrapAngular() {
     "use strict";
 
-    console.log("Bootstrapping AngularJS");
-
     // Set the platform, and hide the Status Bar
     if (isCordovaApp) {
         cordovaPlatform = device.platform;
 
         if (StatusBar.isVisible) {
-            console.log('hiding StatusBar');
             StatusBar.hide();
             StatusBar.overlaysWebView(false);
         }
     }
-
-    console.log('cordovaPlatform = ' + cordovaPlatform);
 
     // Bootstrapping
     var domElement = document.querySelector('html');
@@ -110,7 +103,6 @@ function preloadImages() {
         img = new Image();
         img.src = 'img/' + imgArr[i];
         preloadImages.cache.push(img);
-        console.log('preloadImages: ' + img.src);
     }
 }
 
@@ -121,8 +113,6 @@ function fixWpBounce() {
     if (cordovaPlatform === 'WinCE' || cordovaPlatform === 'Win32NT') {
         if (window.FixWPBouncing) {
             var wrapper = $('.stage_miolo, .stage_miolo2, .stage_miolo4, .stage_miolo5');
-            console.log('cordovaPlatform is ' + cordovaPlatform + ', applying FixWPBouncing');
-            //console.log(wrapper);
             FixWPBouncing.fix(wrapper);
         }
     }
@@ -150,7 +140,6 @@ function mapScroll(elementClass) {
         mapScrollerC.style.width = mapScrollerW + 'px';
         mapScrollerC.style.height = mapScrollerH + 'px';
 
-        console.log('init iScroll');
         var mapScrolld = new IScroll(mapScroller, {
             bindToWrapper: true,
             bounce: true,
@@ -169,7 +158,6 @@ function mapScroll(elementClass) {
 
         mapScrolld.on('scrollStart', hideAlert);
         mapScrolld.on('beforeScrollStart', hideAlert);
-        //mapScrolld.scrollTo(-0.1,-0.1);
     }
 
     function hideAlert() {
@@ -201,7 +189,6 @@ function carousel(element, attrs) {
 // https://github.com/iconic/SVGInjector
 function imgToSvg() {
     'use strict';
-    console.log('injecting SVG');
     var mySVGsToInject = document.querySelectorAll('img.svg');
     new SVGInjector(mySVGsToInject);
 }

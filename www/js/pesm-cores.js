@@ -49,15 +49,20 @@
 
         for (var i = 0; i < infoSrvc.allCores.length; i++) {
 
-            lat = infoSrvc.allCores[i].post_metas.enderecos[0].geolocation.latitude;
-            lon = infoSrvc.allCores[i].post_metas.enderecos[0].geolocation.longitude;
+            lat = 0;
+            lon = 0;
+
+            if(infoSrvc.allCores[i].post_metas.enderecos !== null) {
+                lat = infoSrvc.allCores[i].post_metas.enderecos[0].geolocation.latitude;
+                lon = infoSrvc.allCores[i].post_metas.enderecos[0].geolocation.longitude;
+            }
 
             coresSrvc.listCores.push({
                 'ID': infoSrvc.allCores[i].ID,
                 'name': infoSrvc.allCores[i].title,
                 'content': infoSrvc.allCores[i].content,
                 'slug': infoSrvc.allCores[i].slug,
-                'city': infoSrvc.allCores[i].post_metas.info_nomemenu,
+                'city': infoSrvc.allCores[i].post_metas.info_municipio,
                 'endereco': infoSrvc.allCores[i].post_metas.info_endereco,
                 'telefone': infoSrvc.allCores[i].post_metas.info_telefone,
                 'email': infoSrvc.allCores[i].post_metas.info_email,
@@ -92,10 +97,12 @@
 
             // GeoURL
             for (var n = 0; n < coresSrvc.listCores.length; n++) {
-                for (var o = 0; o < coresSrvc.listCores[n].enderecos.length; o++) {
-                    lat = coresSrvc.listCores[n].enderecos[o].geolocation.latitude;
-                    lon = coresSrvc.listCores[n].enderecos[o].geolocation.longitude;
-                    coresSrvc.listCores[n].enderecos[o].geoUrl = getMapUrl(lat, lon);
+                if(coresSrvc.listCores[n].enderecos !== null){
+                    for (var o = 0; o < coresSrvc.listCores[n].enderecos.length; o++) {
+                        lat = coresSrvc.listCores[n].enderecos[o].geolocation.latitude;
+                        lon = coresSrvc.listCores[n].enderecos[o].geolocation.longitude;
+                        coresSrvc.listCores[n].enderecos[o].geoUrl = getMapUrl(lat, lon);
+                    }
                 }
             }
         }

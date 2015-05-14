@@ -77,7 +77,7 @@
                     // Update Data
                     if (self.storeActivitiesFull[l].core_id == infoSrvc.allCores[n].ID) {
                         self.storeActivitiesFull[l].core_name = infoSrvc.allCores[n].title;
-                        self.storeActivitiesFull[l].core_city = infoSrvc.allCores[n].post_metas.info_nomemenu;
+                        self.storeActivitiesFull[l].core_city = infoSrvc.allCores[n].post_metas.info_municipio;
                         self.storeActivitiesFull[l].core_slug = infoSrvc.allCores[n].slug;
                         self.storeActivitiesFull[l].core_latitude = 0;
                         self.storeActivitiesFull[l].core_longitude = 0;
@@ -119,13 +119,6 @@
                 var lat = self.storeActivitiesFull[n].core_latitude;
                 var lon = self.storeActivitiesFull[n].core_longitude;
                 var km = getKM(gpsSrvc.latitude, gpsSrvc.longitude, lat, lon);
-
-                //console.log(">> km: " + km);
-                //console.log("gpsSrvc.latitude: " + gpsSrvc.latitude);
-                //console.log("gpsSrvc.longitude: " + gpsSrvc.longitude);
-                //console.log("lat: " + lat);
-                //console.log("lon: " + lon);
-                //console.log(" ")
 
                 self.storeDisplayFullData[n].km = km;
             }
@@ -208,8 +201,6 @@
         // Display Holder
         $scope.activitiesList = activitiesSrvc.storeDisplayData;
 
-        //console.log($scope.activitiesList);
-
         // Renders SVG inline
         $scope.$on('renderSvg', function() {
             imgToSvg();
@@ -270,8 +261,6 @@
             }
         }
 
-        //console.log($scope.selectedActivity);
-
         // Renders SVG inline
         $scope.$on('renderSvg', function() {
             imgToSvg();
@@ -321,7 +310,6 @@
                 element.bind('click', function(e) {
                     if (activitiesSrvc.selectedActivities.length === 0) {
                         e.preventDefault();
-                        console.log('Faltou selecionar ao menos uma atividade');
                         alert('Selecione pelo menos uma atividade');
                     }
                 });

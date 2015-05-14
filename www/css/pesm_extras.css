@@ -452,6 +452,10 @@ body {
     overflow: visible;
 }
 
+.nucleo_conteudo1 .box1.no-address {
+    margin-top: 40px;
+}
+
 .nucleo_conteudo1 .box1 .titulo2 {
     margin-bottom: 30px;
 }
