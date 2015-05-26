@@ -34,6 +34,22 @@ body {
     -ms-content-zooming: none;
 }
 
+.no-activity-here {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    color: #D52B11;
+    height: 60px;
+    width: 80%;
+}
+
 .stage_maxW1 {
     max-width: 100%;
 }
