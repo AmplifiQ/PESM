@@ -79,7 +79,7 @@ body {
     background-repeat: no-repeat;
     background-color: #508096;
     background-color: rgba(29,91,143,.5);
-    background-image: url('../_img/icone_arraste.svg');
+    background-image: url('../img/icone_arraste.svg');
     border-radius: 50%;
 }
 
