@@ -69,7 +69,7 @@
     {
         "ID": 1439,
         "title": "Trilha do Rio Pardo",
-        "content": "<p>Localiza na Estrada do Rio Pardo, seu início se dá pela entrada da antiga Fazenda do Cardoso, também conhecida como Fazenda Rio Pardo com potencial de contemplação. A trilha é dividida em dois trechos:</p>\n<p>&#8211; 1° Trecho conhecido como trilha do Gavião Pombo Grande um percurso de 3,6 km, com largura de 3 m com vegetação de mata ciliar, diversidade de espécies avifauna.</p>\n<p>&#8211; 2° Trecho conhecido como Poço da Anta, local em potencial de observação de faunas diversas e principalmente antas, chegando até as corredeiras do Rio Pardo. Percurso de 1,0 km.</p>\n<p><strong>Curiosidade:</strong> Rio Pardo que dá nome a trilha e a Estrada que corta os três Núcleos: Caraguatatuba, São Sebastião, Padre Dória. E principal formador da bacia hidrográfica do Rio Juqueriquêre.<br />\n<strong>Público:</strong> Trilha ideal para grupos de escolas, observadores de aves,<br />\n<strong>Extensão:</strong> 4,63 Km.<br />\n<strong>Duração:</strong> Média de 4 horas com contemplação.<br />\n<strong>Nível de Dificuldade:</strong> Médio/Alto.</p>\n",
+        "content": "<p>Localizada na Estrada do Rio Pardo, seu início se dá pela entrada da antiga Fazenda do Cardoso, também conhecida como Fazenda Rio Pardo com potencial de contemplação. A trilha é dividida em dois trechos:</p>\n<p>&#8211; 1° Trecho conhecido como trilha do Gavião Pombo Grande um percurso de 3,6 km, com largura de 3 m com vegetação de mata ciliar, diversidade de espécies avifauna.</p>\n<p>&#8211; 2° Trecho conhecido como Poço da Anta, local em potencial de observação de faunas diversas e principalmente antas, chegando até as corredeiras do Rio Pardo. Percurso de 1,0 km.</p>\n<p><strong>Curiosidade:</strong> Rio Pardo que dá nome a trilha e a Estrada que corta os três Núcleos: Caraguatatuba, São Sebastião, Padre Dória. E principal formador da bacia hidrográfica do Rio Juqueriquêre.<br />\n<strong>Público:</strong> Trilha ideal para grupos de escolas, observadores de aves,<br />\n<strong>Extensão:</strong> 4,63 Km.<br />\n<strong>Duração:</strong> Média de 4 horas com contemplação.<br />\n<strong>Nível de Dificuldade:</strong> Médio/Alto.</p>\n",
         "slug": "trilha-do-rio-pardo",
         "post_metas": {
             "nucleo_id": "69",
@@ -127,7 +127,7 @@
                 },
                 {
                     "ID": 131,
-                    "name": "Patrímonio Cultural",
+                    "name": "Patrimonio Cultural",
                     "slug": "patrimonio-cultural"
                 },
                 {
@@ -172,7 +172,7 @@
     {
         "ID": 1391,
         "title": "Observação de Aves na Trilha do Rio Pardo",
-        "content": "<p>Localiza na no km 38 da Estrada do Rio Pardo, seu início se dá pela entrada da antiga Fazenda da Serraria, também conhecida como Fazenda Rio Pardo com potencial de contemplação do Rio, num percurso de 4,61 km. A trilha é dividida em dois trechos:</p>\n<p>&#8211; 1° Trecho: conhecido como trilha do Gavião Pombo Grande, com percurso de 3,6 km e largura de 3 m, com vegetação de mata ciliar e diversidade de espécies avifauna.</p>\n<p>&#8211; 2° Trecho: conhecido como Poço da Anta, local em potencial de observação de faunas diversas e principalmente antas, chegando até as corredeiras do Rio Pardo. Percurso de 1,0 km.</p>\n<p>Curiosidade: O Rio Pardo que dá nome a trilha e a Estrada que corta os três Núcleos: Padre Dória, Caraguatatuba e São Sebastião. E o principal formador da bacia hidrográfica do Rio Juqueriquerê.</p>\n<p><strong>Público:</strong> Trilha ideal para grupos de observadores de aves.</p>\n<p><strong>Extensão:</strong> 4,63 Km.</p>\n<p><strong>Duração:</strong> Média de 4 horas com contemplação.</p>\n<p><strong>Nível de Dificuldade: </strong>Médio/Alto.</p>\n",
+        "content": "<p>Localizada na no km 38 da Estrada do Rio Pardo, seu início se dá pela entrada da antiga Fazenda da Serraria, também conhecida como Fazenda Rio Pardo com potencial de contemplação do Rio, num percurso de 4,61 km. A trilha é dividida em dois trechos:</p>\n<p>&#8211; 1° Trecho: conhecido como trilha do Gavião Pombo Grande, com percurso de 3,6 km e largura de 3 m, com vegetação de mata ciliar e diversidade de espécies avifauna.</p>\n<p>&#8211; 2° Trecho: conhecido como Poço da Anta, local em potencial de observação de faunas diversas e principalmente antas, chegando até as corredeiras do Rio Pardo. Percurso de 1,0 km.</p>\n<p>Curiosidade: O Rio Pardo que dá nome a trilha e a Estrada que corta os três Núcleos: Padre Dória, Caraguatatuba e São Sebastião. E o principal formador da bacia hidrográfica do Rio Juqueriquerê.</p>\n<p><strong>Público:</strong> Trilha ideal para grupos de observadores de aves.</p>\n<p><strong>Extensão:</strong> 4,63 Km.</p>\n<p><strong>Duração:</strong> Média de 4 horas com contemplação.</p>\n<p><strong>Nível de Dificuldade: </strong>Médio/Alto.</p>\n",
         "slug": "observacao-de-aves-na-trilha-do-rio-pardo",
         "post_metas": {
             "nucleo_id": "69",
@@ -242,7 +242,7 @@
                 },
                 {
                     "ID": 131,
-                    "name": "Patrímonio Cultural",
+                    "name": "Patrimonio Cultural",
                     "slug": "patrimonio-cultural"
                 },
                 {
@@ -255,7 +255,7 @@
     },
     {
         "ID": 1060,
-        "title": "Tirolesa em Santa VIrgínia",
+        "title": "Tirolesa em Santa Virgínia",
         "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget sapien interdum, vestibulum mi id, eleifend augue. Maecenas imperdiet lacus ut justo gravida faucibus.</p>\n",
         "slug": "tirolesa-em-santa-virginia",
         "post_metas": {
@@ -282,7 +282,7 @@
                 },
                 {
                     "ID": 131,
-                    "name": "Patrímonio Cultural",
+                    "name": "Patrimônio Cultural",
                     "slug": "patrimonio-cultural"
                 },
                 {
@@ -326,7 +326,7 @@
                 },
                 {
                     "ID": 131,
-                    "name": "Patrímonio Cultural",
+                    "name": "Patrimonio Cultural",
                     "slug": "patrimonio-cultural"
                 },
                 {

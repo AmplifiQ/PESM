@@ -24,31 +24,51 @@
             "atividades": null,
             "galeria_atrativos": [
                 {
-                    "imagem": "img/uploads/atrativo_galeria_1.jpg",
+                    "imagem": "img/uploads/sao-sebastiao-atrativo-sitio-arqueologico-sao-francisco-01.jpg",
                     "titulo": "Sítio Arqueológico São Francisco - Por Lucas Cuervo"
                 },
                 {
-                    "imagem": "img/uploads/atrativo_galeria_2.jpg",
+                    "imagem": "img/uploads/sao-sebastiao-atrativo-sitio-arqueologico-sao-francisco-02.jpg",
+                    "titulo": "Sítio Arqueológico São Francisco - Por Lucas Cuervo"
+                },
+                {
+                    "imagem": "img/uploads/sao-sebastiao-atrativo-sitio-arqueologico-sao-francisco-03.jpg",
+                    "titulo": "Mirante do Sítio Arqueológico São Francisco - Por Lucas Cuervo"
+                },
+                {
+                    "imagem": "img/uploads/sao-sebastiao-atrativo-cachoeira-samambaiacu-01.jpg",
                     "titulo": "Cachoeira Samambaiaçu - Por Lucas Cuervo"
                 },
                 {
-                    "imagem": "img/uploads/atrativo_galeria_3.jpg",
+                    "imagem": "img/uploads/sao-sebastiao-atrativo-ribeirao-do-itu-01.jpg",
                     "titulo": "Ribeirão do Itu - Por Lucas Cuervo"
                 },
                 {
-                    "imagem": "img/uploads/atrativo_galeria_1.jpg",
+                    "imagem": "img/uploads/sao-sebastiao-atrativo-ribeirao-do-itu-02.jpg",
+                    "titulo": "Ribeirão do Itu - Por Lucas Cuervo"
+                },
+                {
+                    "imagem": "img/uploads/sao-sebastiao-atrativo-cachoeira-pedra-lisa-01.jpg",
                     "titulo": "Cachoeira Pedra Lisa - Por Lucas Cuervo"
                 },
                 {
-                    "imagem": "img/uploads/atrativo_galeria_2.jpg",
+                    "imagem": "img/uploads/sao-sebastiao-atrativo-praia-brava-01.jpg",
                     "titulo": "Praia Brava - Por Lucas Cuervo"
                 },
                 {
-                    "imagem": "img/uploads/atrativo_galeria_3.jpg",
+                    "imagem": "img/uploads/sao-sebastiao-atrativo-praia-brava-02.jpg",
+                    "titulo": "Praia Brava - Por Lucas Cuervo"
+                },
+                {
+                    "imagem": "img/uploads/sao-sebastiao-atrativo-mirante-de-pauba-01.jpg",
                     "titulo": "Mirante de Paúba - Por Lucas Cuervo"
                 },
                 {
-                    "imagem": "img/uploads/atrativo_galeria_1.jpg",
+                    "imagem": "img/uploads/sao-sebastiao-atrativo-mirante-de-pauba-02.jpg",
+                    "titulo": "Mirante de Paúba - Por Lucas Cuervo"
+                },
+                {
+                    "imagem": "img/uploads/sao-sebastiao-atrativo-viaduto-abandonado-03.jpg",
                     "titulo": "Viaduto Abandonado - Por Lucas Cuervo"
                 }
             ]
@@ -94,32 +114,52 @@
                 }
             ],
             "local_descricao": "<p>Como chegar: lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce massa est, pharetra eget velit id, accumsan efficitur lacus. Sed tempus ligula augue, a tristique augue interdum sed.</p>",
-            "atividades": {
-                "0": {
+            "atividades": [
+                {
                     "atividadeID": "1060",
-                    "atividadeNome": "Tirolesa em Santa VIrgínia"
+                    "atividadeNome": "Tirolesa em Santa Virgínia"
                 },
-                "1": {
+                {
                     "atividadeID": "614",
                     "atividadeNome": "Trilha do Corcovado"
                 },
-                "2": {
+                {
                     "atividadeID": "601",
                     "atividadeNome": "Rafting no Rio Paraibuna"
                 }
-            },
+            ],
             "galeria_atrativos": [
                 {
-                    "imagem": "img/uploads/atrativo_galeria_1.jpg",
+                    "imagem": "img/uploads/santa-virginia-atrativo-pico-do-corcovado-01.jpg",
                     "titulo": "Pico do Corcovado - Por Lucas Cuervo"
                 },
                 {
-                    "imagem": "img/uploads/atrativo_galeria_2.jpg",
+                    "imagem": "img/uploads/santa-virginia-atrativo-pico-do-corcovado-02.jpg",
+                    "titulo": "Pico do Corcovado - Por Lucas Cuervo"
+                },
+                {
+                    "imagem": "img/uploads/santa-virginia-atrativo-pico-do-corcovado-03.jpg",
+                    "titulo": "Pico do Corcovado - Por Lucas Cuervo"
+                },
+                {
+                    "imagem": "img/uploads/santa-virginia-atrativo-poco-do-pito-01.jpg",
                     "titulo": "Poço do Pito - Por Lucas Cuervo"
                 },
                 {
-                    "imagem": "img/uploads/atrativo_galeria_3.jpg",
-                    "titulo": "Rio Paraibuna em Santa Virgínia - Por Lucas Cuervo"
+                    "imagem": "img/uploads/santa-virginia-atrativo-poco-do-pito-02.jpg",
+                    "titulo": "Poço do Pito - Por Lucas Cuervo"
+                },
+                {
+                    "imagem": "img/uploads/santa-virginia-atrativo-rio-paraibuna-01.jpg",
+                    "titulo": "Rio Paraibuna - Por Lucas Cuervo"
+                },
+                {
+                    "imagem": "img/uploads/santa-virginia-atrativo-rio-paraibuna-02.jpg",
+                    "titulo": "Rio Paraibuna - Por Lucas Cuervo"
+                },
+                {
+                    "imagem": "img/uploads/santa-virginia-atrativo-rio-paraibuna-03.jpg",
+                    "titulo": "Rio Paraibuna - Por Lucas Cuervo"
                 }
             ]
         }
@@ -159,7 +199,7 @@
                     "titulo": "Capela de São Lourenço - Por Lucas Cuervo"
                 },
                 {
-                    "imagem": "img/uploads/padre-doria-atrativo-estrada-do-rio-pardo-01",
+                    "imagem": "img/uploads/padre-doria-atrativo-estrada-do-rio-pardo-01.jpg",
                     "titulo": "Estrada do Rio Pardo - Por Lucas Cuervo"
                 }
             ]
@@ -196,16 +236,16 @@
                 }
             ],
             "local_descricao": "<p>Como chegar: lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce massa est, pharetra eget velit id, accumsan efficitur lacus. Sed tempus ligula augue, a tristique augue interdum sed.</p>",
-            "atividades": {
-                "0": {
+            "atividades": [
+                {
                     "atividadeID": "1056",
                     "atividadeNome": "Trilha Fluvial no Rio Fazenda"
                 },
-                "1": {
+                {
                     "atividadeID": "1054",
                     "atividadeNome": "Surf na Praia de Cambury"
                 }
-            },
+            ],
             "galeria_atrativos": [
                 {
                     "imagem": "img/uploads/picinguaba-atrativo-mirante-da-aldeia-boa-vista-01.jpg",
@@ -220,10 +260,6 @@
                     "titulo": "Rio Fazenda - Por Lucas Cuervo"
                 },
                 {
-                    "imagem": "img/uploads/picinguaba-atrativo-rio-fazenda-03.jpg",
-                    "titulo": "Rio Fazenda - Por Lucas Cuervo"
-                },
-                {
                     "imagem": "img/uploads/picinguaba-atrativo-praia-da-fazenda-01.jpg",
                     "titulo": "Praia da Fazenda - Por Lucas Cuervo"
                 },
@@ -232,19 +268,11 @@
                     "titulo": "Praia da Fazenda - Por Lucas Cuervo"
                 },
                 {
-                    "imagem": "img/uploads/picinguaba-atrativo-praia-da-fazenda-03.jpg",
-                    "titulo": "Praia da Fazenda - Por Lucas Cuervo"
-                },
-                {
                     "imagem": "img/uploads/picinguaba-atrativo-cachoeira-do-cambury-01.jpg",
                     "titulo": "Cachoeira do Cambury - Por Lucas Cuervo"
                 },
                 {
                     "imagem": "img/uploads/picinguaba-atrativo-cachoeira-do-cambury-02.jpg",
-                    "titulo": "Cachoeira do Cambury - Por Lucas Cuervo"
-                },
-                {
-                    "imagem": "img/uploads/picinguaba-atrativo-cachoeira-do-cambury-03.jpg",
                     "titulo": "Cachoeira do Cambury - Por Lucas Cuervo"
                 },
                 {
@@ -265,10 +293,6 @@
                 },
                 {
                     "imagem": "img/uploads/picinguaba-atrativo-cachoeira-tombador-02.jpg",
-                    "titulo": "Cachoeira Tombador - Por Lucas Cuervo"
-                },
-                {
-                    "imagem": "img/uploads/picinguaba-atrativo-cachoeira-tombador-03.jpg",
                     "titulo": "Cachoeira Tombador - Por Lucas Cuervo"
                 }
             ]
@@ -326,10 +350,6 @@
                 },
                 {
                     "imagem": "img/uploads/itutinga-piloes-atrativo-rio-passareuva-01.jpg",
-                    "titulo": "Rio Passareúva - Por Lucas Cuervo"
-                },
-                {
-                    "imagem": "img/uploads/itutinga-piloes-atrativo-rio-passareuva-02.jpg",
                     "titulo": "Rio Passareúva - Por Lucas Cuervo"
                 },
                 {
@@ -464,12 +484,12 @@
                 }
             ],
             "local_descricao": "<p>Como chegar: lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce massa est, pharetra eget velit id, accumsan efficitur lacus. Sed tempus ligula augue, a tristique augue interdum sed.</p>",
-            "atividades": {
-                "0": {
+            "atividades": [
+                {
                     "atividadeID": "",
                     "atividadeNome": "Trilha do Mirante"
                 }
-            },
+            ],
             "galeria_atrativos": [
                 {
                     "imagem": "img/uploads/curucutu-atrativo-mirante-01.jpg",

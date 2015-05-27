@@ -108,8 +108,38 @@
     /*  PAGE: ABOUT                                                                                               */
     /* ---------------------------------------------------------------------------------------------------- */
     // About Park Ctrl
-    .controller('aboutParkCtrl', ['$scope', 'infoSrvc', function($scope, infoSrvc) {
+    .controller('aboutParkCtrl', ['$scope', '$location', 'infoSrvc', function($scope, $location, infoSrvc) {
+
         $scope.aboutPark = infoSrvc.aboutPark;
+
+        // Check Zero Length
+        if ($scope.aboutPark.length === 0) {
+            $location.path('/home').replace();
+            return false;
+        }
+
+        $scope.mapUrl = getMapUrl();
+
+        function getMapUrl() {
+            var mapUrl;
+            switch (cordovaPlatform) {
+                case 'Android':
+                    mapUrl = $scope.aboutPark.geo_url.Android;
+                    break;
+
+                case 'iOS':
+                    mapUrl = $scope.aboutPark.geo_url.iOS;
+                    break;
+
+                case 'Win32NT':
+                    mapUrl = $scope.aboutPark.geo_url.Win32NT;
+                    break;
+
+                default:
+                    mapUrl = infoSrvc.aboutPark.geo_url.defaultUrl;
+            }
+            return mapUrl;
+        }
 
         // call fix for Windows Phone Bouncing after deviceready.
         fixWpBounce();
