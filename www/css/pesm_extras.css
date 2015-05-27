@@ -206,7 +206,7 @@ body {
 .owl-theme .owl-controls {
     position: absolute;
     top: -80px;
-    right: 5px;
+    right: 15px;
     margin: 0;
     width: 100%;
 }
