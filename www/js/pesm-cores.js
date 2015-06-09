@@ -60,7 +60,7 @@
             coresSrvc.listCores.push({
                 'ID': infoSrvc.allCores[i].ID,
                 'name': infoSrvc.allCores[i].title,
-                'content': infoSrvc.allCores[i].content,
+                'content': infoSrvc.allCores[i].post_metas.info_content,
                 'slug': infoSrvc.allCores[i].slug,
                 'city': infoSrvc.allCores[i].post_metas.info_municipio,
                 'endereco': infoSrvc.allCores[i].post_metas.info_endereco,
