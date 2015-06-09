@@ -60,7 +60,8 @@
             coresSrvc.listCores.push({
                 'ID': infoSrvc.allCores[i].ID,
                 'name': infoSrvc.allCores[i].title,
-                'content': infoSrvc.allCores[i].post_metas.info_content,
+                //'content': infoSrvc.allCores[i].post_metas.info_content,
+                'content': '<p>' + (infoSrvc.allCores[i].post_metas.info_content).replace(/[\r\n]+(?=[^\r\n])/g,'</p><p>') + '</p>',
                 'slug': infoSrvc.allCores[i].slug,
                 'city': infoSrvc.allCores[i].post_metas.info_municipio,
                 'endereco': infoSrvc.allCores[i].post_metas.info_endereco,
