@@ -97,6 +97,16 @@
                 var a = self.storeActivitiesFull[m].activity;
                 var t = self.storeActivitiesFull[m].type;
 
+                // If there's no featured image...
+                var feat_image = "img/spacer.gif";
+                
+                if (infoSrvc.allActivities[a].featured_image !== null) {
+                    if (infoSrvc.allActivities[a].featured_image.guid !== null) {
+                        feat_image = infoSrvc.allActivities[a].featured_image.guid;
+                        console.log(feat_image);
+                    }
+                }
+
                 self.storeDisplayFullData.push({
                     'ID': infoSrvc.allActivities[a].ID,
                     'title': infoSrvc.allActivities[a].title,
@@ -107,7 +117,7 @@
                     'core_slug': self.storeActivitiesFull[m].core_slug,
                     'content': infoSrvc.allActivities[a].content,
                     'gallery': infoSrvc.allActivities[a].post_metas.galeria,
-                    'image': infoSrvc.allActivities[a].featured_image.guid,
+                    'image': feat_image,
                     'activities': infoSrvc.allActivities[a].terms.tipo_atividades
                 });
             }
